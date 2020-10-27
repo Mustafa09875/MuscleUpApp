@@ -32,17 +32,14 @@ public class StartViewController implements Initializable {
        App.setRoot("StartViewController");
     }
 
-    @FXML
     private void BtnUebungen(MouseEvent event) throws IOException {
         App.setRoot("UebungenViewController");
     }
 
-    @FXML
     private void BtnEinstellung(MouseEvent event) throws IOException {
         App.setRoot("EinstellungViewController");
     }
 
-    @FXML
     private void BtnProfil(MouseEvent event) throws IOException {
         App.setRoot("ProfilViewController");
     }
@@ -52,10 +49,10 @@ public class StartViewController implements Initializable {
         
     }
 
-    @FXML
     private void SwipeUpOpenMuscleUp(SwipeEvent event) throws IOException {
         
         App.setRoot("MuscleUpModel");
     }
+
     
 }

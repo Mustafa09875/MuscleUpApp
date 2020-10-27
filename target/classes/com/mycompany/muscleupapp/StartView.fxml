@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.ScrollBar?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -8,40 +7,42 @@
 
 <AnchorPane id="AnchorPane" prefHeight="499.0" prefWidth="249.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.muscleupapp.StartViewController">
    <children>
-      <ImageView fitHeight="505.0" fitWidth="328.0" layoutY="-4.0">
+      <ImageView fitHeight="505.0" fitWidth="328.0" layoutY="-3.0">
          <image>
-            <Image url="@../../../../../../../../Downloads/Neues%20Projekt.jpg" />
+            <Image url="@../../../../../../img/Neues%20Projekt.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="104.0" layoutY="438.0" onMouseClicked="#BtnUebungen">
          <image>
-            <Image url="@../../../../../../../../Downloads/Übung.png" />
+            <Image url="@../../../../../../img/Übung.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="175.0" layoutY="438.0" onMouseClicked="#BtnEinstellung">
          <image>
-            <Image url="@../../../../../../../../Downloads/Einstellung.png" />
+            <Image url="@../../../../../../img/Einstellung.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="246.0" layoutY="438.0" onMouseClicked="#BtnProfil">
          <image>
-            <Image url="@../../../../../../../../Downloads/Profil.png" />
+            <Image url="@../../../../../../img/Profil.png" />
          </image>
       </ImageView>
-      <ScrollBar layoutX="307.0" layoutY="84.0" orientation="VERTICAL" prefHeight="327.0" prefWidth="15.0" AnchorPane.bottomAnchor="84.0" />
-      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="35.0" layoutY="438.0">
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="35.0" layoutY="438.0" onMouseClicked="#BtnStartView">
          <image>
-            <Image url="@../../../../../../../../Downloads/homebutton_99695(1).png" />
+            <Image url="@../../../../../../img/homebutton_99695(1).png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="91.0" fitWidth="241.0" layoutX="42.0" layoutY="-4.0" onMouseDragged="#DraggedMuscleUpInformation">
-         <image>
-            <Image url="@../../../../../../../../Downloads/Neues%20Projekt.png" />
-         </image>
-      </ImageView>
-      <Line endX="206.0" layoutX="119.0" layoutY="76.0" startX="-119.0" />
-      <Line endX="222.0" layoutX="103.0" layoutY="426.0" startX="-100.0" />
       <Line endX="-113.5" endY="335.0" layoutX="148.0" layoutY="88.0" startX="-113.5" startY="-14.0" />
-      <Line endX="-113.5" endY="335.0" layoutX="407.0" layoutY="90.0" startX="-113.5" startY="-14.0" />
+      <Line endX="-113.5" endY="335.0" layoutX="408.0" layoutY="89.0" startX="-113.5" startY="-14.0" />
+      <ImageView fitHeight="88.0" fitWidth="220.0" layoutX="54.0">
+         <image>
+            <Image url="@../../../../../../img/Neues%20Projekt(6).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="353.0" fitWidth="262.0" layoutX="33.0" layoutY="73.0" onSwipeUp="#SwipeUpOpenMuscleUp">
+         <image>
+            <Image url="@../../../../../../img/Neues%20Projekt(13).png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

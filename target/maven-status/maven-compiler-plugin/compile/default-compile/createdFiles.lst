@@ -9,9 +9,11 @@ com\mycompany\muscleupapp\DipsModelController.class
 com\mycompany\muscleupapp\App.class
 com\mycompany\muscleupapp\Uebungen.class
 com\mycompany\muscleupapp\KlimmzuegeModelController.class
+com\mycompany\muscleupapp\MuslceUpInfoBoxController.class
 com\mycompany\muscleupapp\KlimmzuegeModel.class
 com\mycompany\muscleupapp\MuscleUpModelController.class
 com\mycompany\muscleupapp\ProfilViewController.class
 com\mycompany\muscleupapp\UebungenViewController.class
 com\mycompany\muscleupapp\MuscleUpModel.class
 com\mycompany\muscleupapp\LiegestuetzeModelController.class
+com\mycompany\muscleupapp\StartView.class
