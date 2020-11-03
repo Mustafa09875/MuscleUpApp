@@ -14,7 +14,7 @@ import javafx.fxml.Initializable;
  *
  * @author Test
  */
-public class MuslceUpInfoBoxController implements Initializable {
+public class ProfilAktualisierenViewController implements Initializable {
 
     /**
      * Initializes the controller class.

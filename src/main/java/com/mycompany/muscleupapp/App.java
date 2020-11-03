@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -19,6 +20,34 @@ public class App extends Application {
     private static Scene scene;
     
     private static ArrayList<Profil> profile;
+    private static Profil selectedProfil;
+    
+    
+    
+    
+/**
+ * Setter und Getter für Profil 
+ */
+    public static ArrayList<Profil> getProfile() {
+        return profile;
+    }
+
+    public static void setProfile(ArrayList<Profil> profile) {
+        App.profile = profile;
+    }
+
+    public static Profil getSelectedProfil() {
+        return selectedProfil;
+    }
+
+    public static void setSelectedProfil(Profil selectedProfil) {
+        App.selectedProfil = selectedProfil;
+    }
+    
+    
+    
+    
+    
     
     
     
@@ -27,7 +56,8 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("StartViewController"), 640, 480);
+        
+        scene = new Scene(loadFXML("StartView"), 328, 500);
         stage.setScene(scene);
         stage.show();
     }
@@ -49,6 +79,7 @@ public class App extends Application {
     
     public static void main(String[] args) {
         App.profile = new ArrayList <>();
+        profile.add(new Profil("Okal", "Loral", 23, 78, 179, "OkaLoa008@gmail.com"));
         
         
         launch();

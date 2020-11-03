@@ -17,12 +17,13 @@ public class Profil {
     int groeße;
     String email;
     
-    private Profil(String vorname, String nachname, int alter, int gewicht, int groeße, String email)
+    public Profil(String vorname, String nachname, int alter, int gewicht, int groeße, String email)
     {
         this.vorname = vorname;
         this.nachname = nachname;
         this.alter = alter;
         this.gewicht = gewicht;
+        this.groeße = groeße;
         this.email = email;
                 
     }
@@ -46,7 +47,8 @@ public class Profil {
     public int getAlter() {
         return alter;
     }
-
+    
+    
     public void setAlter(int alter) {
         this.alter = alter;
     }

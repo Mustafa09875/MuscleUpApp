@@ -13,6 +13,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.input.SwipeEvent;
 
+
 /**
  * FXML Controller class
  *
@@ -26,31 +27,35 @@ public class StartViewController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+       
     }    
 
     private void BtnHome(MouseEvent event) throws IOException {
        App.setRoot("StartViewController");
     }
 
+    @FXML
     private void BtnUebungen(MouseEvent event) throws IOException {
-        App.setRoot("UebungenViewController");
+        App.setRoot("UebungenView");
     }
 
+    @FXML
     private void BtnEinstellung(MouseEvent event) throws IOException {
-        App.setRoot("EinstellungViewController");
+        App.setRoot("EinstellungView");
     }
 
+    @FXML
     private void BtnProfil(MouseEvent event) throws IOException {
-        App.setRoot("ProfilViewController");
+        App.setRoot("ProfilView");
     }
 
-    private void DraggedMuscleUpInformation(MouseEvent event) throws IOException {
-        App.setRoot("MuscleUpInfoBox");
-        
+    @FXML
+    private void BtnStartView(MouseEvent event) throws IOException {
+        App.setRoot("StartView");
     }
 
-    private void SwipeUpOpenMuscleUp(SwipeEvent event) throws IOException {
-        
+    @FXML
+    private void SwipeUpOpenMuscleUp(MouseEvent event) throws IOException {
         App.setRoot("MuscleUpModel");
     }
 

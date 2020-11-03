@@ -5,9 +5,12 @@
  */
 package com.mycompany.muscleupapp;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.input.MouseEvent;
 
 /**
  * FXML Controller class
@@ -23,5 +26,15 @@ public class MuscleUpModelController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void BtnBacktostartview(MouseEvent event) throws IOException {
+        App.setRoot("StartView");
+    }
+
+    @FXML
+    private void BtnToUebungen(MouseEvent event) throws IOException {
+        App.setRoot("UebungenView");
+    }
     
 }

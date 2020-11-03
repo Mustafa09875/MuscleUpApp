@@ -27,6 +27,7 @@ public class DipsModel {
 
     public void setName(String name) {
         this.name = name;
+        System.out.println("d");
     }
 
     public String getBeschreibung() {
@@ -38,7 +39,6 @@ public class DipsModel {
     }
 
     public String getBilder() {
-        System.out.println("hi");
         return bilder;
     }
 

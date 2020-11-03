@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 
-<AnchorPane id="AnchorPane" prefHeight="499.0" prefWidth="249.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.muscleupapp.StartViewController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.muscleupapp.ProfilViewController">
    <children>
       <ImageView fitHeight="505.0" fitWidth="328.0" layoutY="-4.0">
          <image>
-            <Image url="@../../../../../../img/Neues%20Projekt.jpg" />
+            <Image url="@Neues%20Projekt.jpg" />
          </image>
       </ImageView>
       <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="104.0" layoutY="438.0" onMouseClicked="#BtnUebungen">
          <image>
-            <Image url="@../../../../../../img/Übung.png" />
+            <Image url="@Übung.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="246.0" layoutY="438.0" onMouseClicked="#BtnProfil">
          <image>
-            <Image url="@../../../../../../img/Profil.png" />
+            <Image url="@Profil.png" />
          </image>
       </ImageView>
-      <ScrollBar layoutX="307.0" layoutY="87.0" orientation="VERTICAL" prefHeight="327.0" prefWidth="15.0" AnchorPane.bottomAnchor="87.0" />
-      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="35.0" layoutY="438.0">
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="35.0" layoutY="438.0" onMouseClicked="#BtnStartView">
          <image>
-            <Image url="@../../../../../../img/homebutton_99695(1).png" />
+            <Image url="@homebutton_99695(1).png" />
          </image>
       </ImageView>
       <Line endX="206.0" layoutX="119.0" layoutY="76.0" startX="-119.0" />
@@ -35,13 +35,15 @@
       <Line endX="-113.5" endY="335.0" layoutX="407.0" layoutY="90.0" startX="-113.5" startY="-14.0" />
       <ImageView fitHeight="97.0" fitWidth="243.0" layoutX="41.0">
          <image>
-            <Image url="@../../../../../../img/Neues%20Projekt(9).png" />
+            <Image url="@Neues%20Projekt(9).png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="177.0" layoutY="438.0">
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="175.0" layoutY="438.0" onMouseClicked="#BtnEinstellungView">
          <image>
-            <Image url="@../../../../../../img/Einstellung.png" />
+            <Image url="@Einstellung.png" />
          </image>
       </ImageView>
+      <ListView fx:id="lwProfil" layoutX="52.0" layoutY="91.0" onMouseClicked="#btnProfilaendern" prefHeight="199.0" prefWidth="225.0" />
+      <Button layoutX="60.0" layoutY="313.0" mnemonicParsing="false" onMouseClicked="#btnNeuesProfil" prefHeight="97.0" prefWidth="210.0" text="NEUES PROFIL" />
    </children>
 </AnchorPane>

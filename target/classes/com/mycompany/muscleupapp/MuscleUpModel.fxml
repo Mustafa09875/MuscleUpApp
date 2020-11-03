@@ -5,14 +5,24 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
 
-<AnchorPane id="AnchorPane" prefHeight="499.0" prefWidth="249.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.muscleupapp.StartViewController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.muscleupapp.MuscleUpModelController">
    <children>
-      <ImageView fitHeight="505.0" fitWidth="328.0" layoutY="-3.0">
+      <ImageView fitHeight="505.0" fitWidth="328.0">
          <image>
-            <Image url="@../../../../../../../../../Downloads/Neues%20Projekt.jpg" />
+            <Image url="@Neues%20Projekt.jpg" />
          </image>
       </ImageView>
-      <Line endX="-113.5" endY="335.0" layoutX="148.0" layoutY="88.0" startX="-113.5" startY="-14.0" />
+      <Line endX="-113.5" endY="332.0" layoutX="148.0" layoutY="88.0" startX="-113.5" startY="-14.0" />
       <Line endX="-113.5" endY="335.0" layoutX="408.0" layoutY="89.0" startX="-113.5" startY="-14.0" />
+      <ImageView fitHeight="34.0" fitWidth="91.0" layoutX="6.0" layoutY="14.0" onMouseClicked="#BtnBacktostartview">
+         <image>
+            <Image url="@New%20Project%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="91.0" layoutX="237.0" layoutY="14.0" onMouseClicked="#BtnToUebungen">
+         <image>
+            <Image url="@New%20Project.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
