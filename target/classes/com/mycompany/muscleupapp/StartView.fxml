@@ -22,7 +22,7 @@
             <Image url="@Einstellung.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="246.0" layoutY="438.0" onMouseClicked="#BtnProfil">
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="246.0" layoutY="438.0" onMouseClicked="#BtnProfiloeffnen">
          <image>
             <Image url="@Profil.png" />
          </image>

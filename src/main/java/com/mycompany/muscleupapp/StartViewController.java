@@ -43,11 +43,7 @@ public class StartViewController implements Initializable {
     private void BtnEinstellung(MouseEvent event) throws IOException {
         App.setRoot("EinstellungView");
     }
-
-    @FXML
-    private void BtnProfil(MouseEvent event) throws IOException {
-        App.setRoot("ProfilView");
-    }
+ 
 
     @FXML
     private void BtnStartView(MouseEvent event) throws IOException {
@@ -57,6 +53,11 @@ public class StartViewController implements Initializable {
     @FXML
     private void SwipeUpOpenMuscleUp(MouseEvent event) throws IOException {
         App.setRoot("MuscleUpModel");
+    }
+
+    @FXML
+    private void BtnProfiloeffnen(MouseEvent event) throws IOException {
+         App.setRoot("ProfilView");
     }
 
     

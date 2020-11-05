@@ -31,14 +31,15 @@ public class ProfilViewController implements Initializable {
         // TODO
         
         for(Profil p : App.getProfile()){
-           lwProfil.getItems().add(p.getVorname());
-           lwProfil.getItems().add(p.getNachname());
-           String alterzustring = "" + App.getSelectedProfil().getAlter();
-           String gewichtzustring = "" + App.getSelectedProfil().getGewicht();
-           String groessezustring = "" + App.getSelectedProfil().getGroeße();
+           lwProfil.getItems().add(p.getVorname() + "" + p.getNachname());
+           
+           /*String alterzustring = "" + p.getAlter();
+           String gewichtzustring = "" + p.getGewicht();
+           String groessezustring = "" + p.getGroeße();
            lwProfil.getItems().add(alterzustring);
            lwProfil.getItems().add(gewichtzustring);
-           lwProfil.getItems().add(p.getEmail());
+           lwProfil.getItems().add(groessezustring);
+           lwProfil.getItems().add(p.getEmail());*/
         }
             
     }    
@@ -51,11 +52,6 @@ public class ProfilViewController implements Initializable {
     @FXML
     private void BtnProfil(MouseEvent event) throws IOException {
         App.setRoot("ProfilView");
-    }
-
-    @FXML
-    private void btnProfilaendern(MouseEvent event) throws IOException {
-        App.setRoot("ProfilAendernView");
     }
 
     @FXML
@@ -72,6 +68,18 @@ public class ProfilViewController implements Initializable {
     private void BtnEinstellungView(MouseEvent event) throws IOException {
         App.setRoot("EinstellungView");
                 
+    }
+
+    @FXML
+    private void btnProfilaendernView(MouseEvent event) throws IOException {
+       
+        int index = lwProfil.getSelectionModel().getSelectedIndex();
+        App.setSelectedProfil(App.getProfile().get(index));
+        
+        //App.setSelectedProfil(App.getProfile().get(index).vorname);
+        
+        
+        App.setRoot("ProfilAktualisierenView");
     }
     
     

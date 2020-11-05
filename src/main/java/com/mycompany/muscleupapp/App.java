@@ -37,7 +37,7 @@ public class App extends Application {
     }
 
     public static Profil getSelectedProfil() {
-        return selectedProfil;
+        return App.selectedProfil;
     }
 
     public static void setSelectedProfil(Profil selectedProfil) {
