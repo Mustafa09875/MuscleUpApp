@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.muscleupapp.LiegestuetzeModelController">
-    
+   <children>
+      <ImageView fitHeight="505.0" fitWidth="328.0">
+         <image>
+            <Image url="@Neues%20Projekt.jpg" />
+         </image>
+      </ImageView>
+      <Line endX="-113.5" endY="332.0" layoutX="148.0" layoutY="88.0" startX="-113.5" startY="-14.0" />
+      <Line endX="-113.5" endY="335.0" layoutX="408.0" layoutY="89.0" startX="-113.5" startY="-14.0" />
+      <ImageView fitHeight="34.0" fitWidth="91.0" layoutX="6.0" layoutY="14.0" onMouseClicked="#btnBackToStartView">
+         <image>
+            <Image url="@New%20Project%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="91.0" layoutX="237.0" layoutY="14.0" onMouseClicked="#btnToUebungen">
+         <image>
+            <Image url="@New%20Project.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="300.0" fitWidth="200.0" layoutX="64.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="135.0" layoutY="74.0" text="So geht es:" textFill="WHITE" />
+   </children>
 </AnchorPane>
+

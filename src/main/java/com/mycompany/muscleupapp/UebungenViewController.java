@@ -46,5 +46,16 @@ public class UebungenViewController implements Initializable {
     private void BtnStartView(MouseEvent event) throws IOException {
         App.setRoot("StartView");
     }
+
+    @FXML
+    private void btnUebungLiegestütze(MouseEvent event) throws IOException {
+        App.setRoot("LiegestuetzeModel");
+    }
+
+    @FXML
+    private void btnUebungMuscleUp(MouseEvent event) throws IOException {
+        App.setRoot("MuscleUpModel");
+    }
+    
     
 }

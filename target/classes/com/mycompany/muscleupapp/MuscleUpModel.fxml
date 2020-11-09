@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -24,5 +25,7 @@
             <Image url="@New%20Project.png" />
          </image>
       </ImageView>
+      <ImageView fitHeight="300.0" fitWidth="200.0" layoutX="64.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="135.0" layoutY="74.0" text="So geht es:" textFill="WHITE" />
    </children>
 </AnchorPane>

@@ -56,7 +56,7 @@ public class ProfilAktualisierenViewController implements Initializable {
         App.getSelectedProfil().setAlter(alter);
         App.getSelectedProfil().setGewicht(gewicht);
         App.getSelectedProfil().setGroeße(groeße);
-                App.getSelectedProfil().setEmail(txtFieldEmail.getText());
+        App.getSelectedProfil().setEmail(txtFieldEmail.getText());
     }
 
     @FXML

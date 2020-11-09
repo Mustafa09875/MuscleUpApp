@@ -44,6 +44,6 @@
          </image>
       </ImageView>
       <ListView fx:id="lwProfil" layoutX="52.0" layoutY="91.0" onMouseClicked="#btnProfilaendernView" prefHeight="199.0" prefWidth="225.0" />
-      <Button layoutX="60.0" layoutY="313.0" mnemonicParsing="false" onMouseClicked="#btnNeuesProfil" prefHeight="97.0" prefWidth="210.0" text="NEUES PROFIL" />
+      <Button layoutX="60.0" layoutY="313.0" mnemonicParsing="false" onMouseClicked="#btnNeuesProfil" prefHeight="97.0" prefWidth="210.0" text="Profil bearbeiten" />
    </children>
 </AnchorPane>
