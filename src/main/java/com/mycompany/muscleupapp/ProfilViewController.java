@@ -108,7 +108,12 @@ public class ProfilViewController implements Initializable {
         int textFieldAlter = Integer.parseInt(txtFieldAlter.getText());
         int textFieldGewicht = Integer.parseInt(txtFieldGewicht.getText());
         int textFieldGroeße = Integer.parseInt(txtFieldGroesse.getText());
-        App.getProfile().add(new Profil(txtFieldVorname.getText(), txtFieldNachame.getText(), textFieldAlter, textFieldGewicht, textFieldGroeße, txtFieldEmail.getText()));
+        App.getProfile().get(0).setVorname(txtFieldVorname.getText()); 
+        App.getProfile().get(0).setNachname(txtFieldNachame.getText());
+        App.getProfile().get(0).setAlter(textFieldAlter); 
+        App.getProfile().get(0).setGewicht(textFieldGewicht);
+        App.getProfile().get(0).setGroeße(textFieldGroeße);
+        App.getProfile().get(0).setEmail(txtFieldEmail.getText());
         App.setRoot("ProfilView");
     }
 
