@@ -42,9 +42,9 @@
             <Image url="@Neues%20Projekt(7).png" />
          </image>
       </ImageView>
-      <Label layoutX="114.0" layoutY="85.0" text="Übung für Anfäger" textFill="WHITE" />
+      <Label layoutX="114.0" layoutY="85.0" text="Übung für Dips" textFill="WHITE" />
       <ImageView fitHeight="125.0" fitWidth="200.0" layoutX="64.0" layoutY="112.0" onMouseClicked="#btnUebungLiegestütze" pickOnBounds="true" preserveRatio="true" />
       <ImageView fitHeight="125.0" fitWidth="200.0" layoutX="64.0" layoutY="283.0" onMouseClicked="#btnUebungMuscleUp" pickOnBounds="true" preserveRatio="true" />
-      <Label layoutX="92.0" layoutY="256.0" text="Übung für Fortgeschrittene" textFill="WHITE" />
+      <Label layoutX="107.0" layoutY="257.0" text="Übung für Klimmzug" textFill="WHITE" />
    </children>
 </AnchorPane>

@@ -11,6 +11,7 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
+import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
 /**
@@ -20,8 +21,21 @@ import javafx.scene.input.MouseEvent;
  */
 public class ProfilViewController implements Initializable {
 
-    @FXML
     private ListView<String> lwProfil;
+    @FXML
+    private TextField txtFieldVorname;
+    @FXML
+    private TextField txtFieldNachame;
+    @FXML
+    private TextField txtFieldAlter;
+    @FXML
+    private TextField txtFieldGewicht;
+    @FXML
+    private TextField txtFieldGroesse;
+    @FXML
+    private TextField txtFieldEmail;
+    @FXML
+    private ListView<String> ListViewProfilAnzeigen;
 
     /**
      * Initializes the controller class.
@@ -29,21 +43,32 @@ public class ProfilViewController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        for(Profil p : App.getProfile()){
+            ListViewProfilAnzeigen.getItems().add(p.getVorname() + " " + p.getNachname() + " " + p.getAlter() + " " + p.getGewicht() + " " + p.getGroeße() + " " + p.getEmail());
+        }
+        
+        //int alter = Integer.parseInt(txtFieldAlter.getText());
+        //this.txtFieldVorname.setText(App.getSelectedProfil().getVorname());
+       //this.txtFieldNachame.setText(App.getSelectedProfil().getNachname());
+       //this.txtFieldNachame.setText(App.getSelectedProfil().alter);
+    
         
         for(Profil p : App.getProfile()){
-           lwProfil.getItems().add(p.getVorname() + "" + p.getNachname());
+           //lwProfil.getItems().add(p.getVorname() + "" + p.getNachname());
            
-           /*String alterzustring = "" + p.getAlter();
+           
+           /**String alterzustring = "" + p.getAlter();
            String gewichtzustring = "" + p.getGewicht();
            String groessezustring = "" + p.getGroeße();
            lwProfil.getItems().add(alterzustring);
            lwProfil.getItems().add(gewichtzustring);
            lwProfil.getItems().add(groessezustring);
-           lwProfil.getItems().add(p.getEmail());*/
+           lwProfil.getItems().add(p.getEmail());**/
         }
             
     }    
 
+    
     @FXML
     private void BtnUebungen(MouseEvent event) throws IOException {
         App.setRoot("UebungenView");
@@ -52,11 +77,6 @@ public class ProfilViewController implements Initializable {
     @FXML
     private void BtnProfil(MouseEvent event) throws IOException {
         App.setRoot("ProfilView");
-    }
-
-    @FXML
-    private void btnNeuesProfil(MouseEvent event) throws IOException {
-        App.setRoot("ProfilErstellenView");
     }
 
     @FXML
@@ -71,16 +91,13 @@ public class ProfilViewController implements Initializable {
     }
 
     @FXML
-    private void btnProfilaendernView(MouseEvent event) throws IOException {
-       
-        int index = lwProfil.getSelectionModel().getSelectedIndex();
-        App.setSelectedProfil(App.getProfile().get(index));
-        
-        //App.setSelectedProfil(App.getProfile().get(index).vorname);
-        
-        
-        App.setRoot("ProfilAktualisierenView");
+    private void btnProfilSpeichernn(MouseEvent event) throws IOException {
+        int textFieldAlter = Integer.parseInt(txtFieldAlter.getText());
+        int textFieldGewicht = Integer.parseInt(txtFieldGewicht.getText());
+        int textFieldGroeße = Integer.parseInt(txtFieldGroesse.getText());
+        App.getProfile().add(new Profil(txtFieldVorname.getText(), txtFieldNachame.getText(), textFieldAlter, textFieldGewicht, textFieldGroeße, txtFieldEmail.getText()));
+        App.setRoot("ProfilView");
     }
-    
+
     
 }
