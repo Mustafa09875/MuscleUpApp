@@ -44,8 +44,21 @@ public class ProfilViewController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
         for(Profil p : App.getProfile()){
-            ListViewProfilAnzeigen.getItems().add(p.getVorname() + " " + p.getNachname() + " " + p.getAlter() + " " + p.getGewicht() + " " + p.getGroeße() + " " + p.getEmail());
+            ListViewProfilAnzeigen.getItems().add(p.getVorname() + " - " + p.getNachname() + " - " + p.getAlter() + " - " + p.getGewicht() + " - " + p.getGroeße() + " - " + p.getEmail());
         }
+        txtFieldVorname.setText(App.getProfile().get(0).getVorname());
+        txtFieldNachame.setText(App.getProfile().get(0).getNachname());
+        String textFieldAlter = String.valueOf(App.getProfile().get(0).getAlter());
+        txtFieldAlter.setText(textFieldAlter);
+        String textFieldGewicht = String.valueOf(App.getProfile().get(0).getGewicht());
+        txtFieldGewicht.setText(textFieldGewicht);
+        String TextFieldGroeße = String.valueOf(App.getProfile().get(0).getGroeße());
+        txtFieldGroesse.setText(TextFieldGroeße);
+        txtFieldEmail.setText(App.getProfile().get(0).getEmail());
+        
+        /**int index = ListViewProfilAnzeigen.getSelectionModel().getSelectedIndex();
+         *App.setProfile(App.getProfile().get(index));
+         */
         
         //int alter = Integer.parseInt(txtFieldAlter.getText());
         //this.txtFieldVorname.setText(App.getSelectedProfil().getVorname());
